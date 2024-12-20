@@ -1,0 +1,194 @@
+// Import custom font
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+// General Styling
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #f0f7ff;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+// Custom Navbar Design
+.navbar {
+  background: linear-gradient(135deg, #00bcd4, #80deea);
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.2);
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    position: relative;
+    padding: 8px 15px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    &:hover::after {
+      width: 80%;
+    }
+  }
+}
+
+// Main Content Area
+.hero-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🦷</text></svg>') repeat;
+  background-size: 150px;
+  padding: 4rem 0;
+  margin-top: -20px;
+  border-radius: 0 0 50% 50%/30px;
+}
+
+.welcome-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 188, 212, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+h1 {
+  color: #00838f;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: '🦷';
+    font-size: 1.5rem;
+    position: absolute;
+    right: -40px;
+    top: 0;
+  }
+}
+
+.lead {
+  color: #546e7a;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+// Custom Button Styles
+.btn-dental {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: all 0.5s ease;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
+
+  &.btn-primary {
+    background: linear-gradient(135deg, #00acc1, #00bcd4);
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+  }
+
+  &.btn-secondary {
+    background: linear-gradient(135deg, #546e7a, #78909c);
+    border: none;
+    box-shadow: 0 4px 15px rgba(84, 110, 122, 0.3);
+  }
+}
+
+// Language Selector
+.language-selector {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+.dropdown-menu {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+  font-weight: 500;
+}
+
+// Footer
+footer {
+  background: linear-gradient(135deg, #00838f, #006064);
+  color: #fff;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+// Features Grid
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 188, 212, 0.1);
+  }
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+.tooth-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: #fff;
+}
