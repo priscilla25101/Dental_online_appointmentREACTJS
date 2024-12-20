@@ -28,7 +28,8 @@ Download appointment receipts or confirmations when needed.
 
 Patients and administrators can reset their passwords using an email-based recovery system.
 Confirmation emails guide users on resetting their passwords securely.
-Multilingual Support
+
+## Multilingual Support
 
 Available in English, Kinyarwanda, and French, ensuring accessibility for diverse users.
 Search and Sort
@@ -96,17 +97,18 @@ MySQL (for database)
 ![image](https://github.com/user-attachments/assets/81fb25bf-ed6b-4b2f-a25f-4b77c25bff73)
 
 ## DASHBOARD
-# Administrators can dynamically search and sort appointment and patient data AND ALSO EDI
+
 
 ![image](https://github.com/user-attachments/assets/fccf80fe-1298-40cb-ac4f-f196b43e2ec6)
 
 ![image](https://github.com/user-attachments/assets/e0417d48-c163-498f-93d8-6df016ea3e95)
 
 ## REGISTERD PAITENTS
+   Administrators can dynamically search and sort appointment and patient data AND ALSO EDIT
 
 ![image](https://github.com/user-attachments/assets/ea612361-be34-44a7-beb0-c4cbc939b0cb)
 
-## USER EDIT
+## PATIENTS CAN EDIT THEIR PROFILES
 
 ![image](https://github.com/user-attachments/assets/700a0878-e9ae-423d-8609-18e84a8eed33)
 
